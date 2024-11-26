@@ -1,0 +1,100 @@
+#header,
+#home,
+.section1_bg {
+    background-color: #008374;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+}
+
+.reseau {
+    opacity: 0.7;
+}
+
+#collapsingbtn {
+    flex-grow: 0;
+}
+
+#header p,
+#header nav h2,
+#header a,
+#home h1,
+#home div div div p,
+#home div div div div #button,
+.section1_bg {
+    color: #fff;
+}
+
+#home div div div p {
+    opacity: 0.7;
+}
+
+#deep {
+    position: relative;
+}
+
+#deep:hover~#deep_menu {
+    display: block;
+}
+
+#deep_menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    top: 37px;
+    width: 100%;
+    right: 175px;
+    display: none;
+}
+
+#home div div div div #button {
+    background-color: #0b9786;
+}
+
+.section1_bg:nth-child(1),
+.section1_bg:nth-child(3),
+.section1_bg:nth-child(4) {
+    padding: 77px 35px;
+    text-align: center;
+    position: relative;
+    top: 130px;
+}
+
+.section1_bg:nth-child(2) {
+    padding: 60px 35px;
+    text-align: center;
+    position: relative;
+    top: 130px;
+}
+
+@media screen and (max-width: 768px) {
+    #deep:hover~#deep_menu {
+        display: block;
+    }
+
+    #deep_menu {
+        position: initial;
+        display: none;
+    }
+
+    .section1_bg:nth-child(1),
+    .section1_bg:nth-child(3),
+    .section1_bg:nth-child(4) {
+        padding: 77px 35px;
+        text-align: center;
+        position: initial;
+        top: 0;
+    }
+
+    .section1_bg:nth-child(2) {
+        padding: 60px 35px;
+        text-align: center;
+        position: initial;
+        top: 0;
+    }
+}
