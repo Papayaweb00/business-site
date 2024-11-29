@@ -1,10 +1,43 @@
 #header,
 #home,
-.section1_bg {
+.section1_bg,
+.contact_col {
     background-color: #008374;
 }
 
+.port {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 9px 15px;
+    gap: 15px;
+}
+
+.contact_col2 {
+    background-color: #fff;
+    padding: 55px 25px;
+}
+
+.icone_contact {
+    font-size: 2em;
+
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.contact_col {
+    color: #fff;
+}
+
 #header {
+    position: sticky;
+    top: 0;
+}
+
+#stick {
+    position: sticky;
+    top: 0;
+}
+
+#navBar {
     position: sticky;
     top: 0;
 }
@@ -29,6 +62,10 @@
 
 #home div div div p {
     opacity: 0.7;
+}
+
+#home {
+    height: 87vh;
 }
 
 #deep {
@@ -56,25 +93,167 @@
     background-color: #0b9786;
 }
 
+.activate {
+    color: #008374;
+}
+
 .section1_bg:nth-child(1),
 .section1_bg:nth-child(3),
 .section1_bg:nth-child(4) {
-    padding: 77px 35px;
+    padding: 17px 75px;
     text-align: center;
     position: relative;
-    top: 130px;
+    top: 3px;
 }
 
 .section1_bg:nth-child(2) {
-    padding: 60px 35px;
+    padding: 20px 75px;
     text-align: center;
     position: relative;
-    top: 130px;
+    top: 3px;
+}
+
+.section1_bg h3 {
+    font-size: 1.5em;
+    /* width: 200%; */
+}
+
+.color_change {
+    color: #008374;
+}
+
+.taille {
+    width: 100%;
+}
+
+#about_h1,
+#service_h1 {
+    background-color: #008374;
+    height: 5px;
+    width: 25%;
+    display: block;
+}
+
+#ic {
+    background-color: #008374;
+    color: white;
+}
+
+.ic {
+    color: #008374;
+}
+
+.ic span,
+.sa {
+    color: #6c757d;
+    opacity: 0.5;
+}
+
+#buy_btn {
+    transition: all 1000ms ease;
+}
+
+#buy_btn:hover,
+.but {
+    background-color: #008374;
+    color: #fff;
+}
+
+.but {
+    border: none;
+    
+}
+
+#service_h1_2 {
+    background-color: #008374;
+    height: 5px;
+    width: 9%;
+    display: block;
+}
+
+#price_id {
+    border: 3px ridge #069e8c;
+}
+
+#about {
+    margin-top: 125px;
+}
+
+.section1_bg {
+    transition: background-color 100ms ease-in;
+}
+
+.section1_bg:hover {
+    background-color: rgba(137, 135, 135, 0.5);
+}
+
+#pose {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#pose .card {
+    width: 20vw;
+}
+
+.social a {
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    transition: all 1000ms ease;
+}
+
+.social a:hover {
+    color: #008374;
+    border-color: #008374;
+}
+
+.blog_round {
+    width: 19%;
 }
 
 @media screen and (max-width: 768px) {
     #deep:hover~#deep_menu {
         display: block;
+    }
+
+    .contact_col2 {
+        /* background-color: #fff; */
+        padding: 19px 25px;
+    }
+
+    .accord {
+        width: 100%;
+    }
+
+    .price {
+        width: 100%;
+    }
+
+    #about {
+        margin-top: 25px;
+    }
+
+    .section1_bg h3 {
+        font-size: 1.7em;
+        width: 100%;
+    }
+
+    .contact_input {
+        width: 100%;
+    }
+
+    #pose {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    #pose .card {
+        width: 100%;
+    }
+
+    #home {
+        height: initial;
     }
 
     #deep_menu {
@@ -85,16 +264,25 @@
     .section1_bg:nth-child(1),
     .section1_bg:nth-child(3),
     .section1_bg:nth-child(4) {
-        padding: 77px 35px;
+        padding: 100px 75px;
         text-align: center;
         position: initial;
+        width: 90%;
         top: 0;
     }
 
     .section1_bg:nth-child(2) {
-        padding: 60px 35px;
+        padding: 83px 75px;
         text-align: center;
         position: initial;
+        width: 90%;
         top: 0;
     }
 }
+
+/* 
+@media screen and (min-width: 1024px) {
+    .section1_bg {
+        padding: 100px;
+    }
+} */
