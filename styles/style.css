@@ -1,7 +1,9 @@
 #header,
 #home,
 .section1_bg,
-.contact_col {
+.contact_col,
+footer,
+.blog_background {
     background-color: #008374;
 }
 
@@ -10,6 +12,23 @@
     border-radius: 15px;
     padding: 9px 15px;
     gap: 15px;
+}
+
+.backy {
+    background-color: #0b9786;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link1 {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 1000ms ease;
+}
+.link1:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 .contact_col2 {
@@ -205,6 +224,26 @@
 .social a:hover {
     color: #008374;
     border-color: #008374;
+}
+
+.footer_link {
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 1000ms ease;
+}
+
+.footer_link:hover {
+    color: #fff;
+}
+
+.social2 a {
+    color: #fff;
+    border: 1px solid #fff;
+    opacity: 0.5;
+    transition: opacity 1000ms ease;
+}
+
+.social2 a:hover {
+    opacity: 0.9;
 }
 
 .blog_round {
